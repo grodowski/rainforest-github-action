@@ -4,11 +4,8 @@ inputs:
   rainforest_api_key:  # id of input
     description: 'Rainforest API key'
     required: true
-# outputs:
-#   time: # id of output
-#     description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
   args:
-    - --fail-fast -f spec/rainforest
+    - run --fail-fast -f spec/rainforest
