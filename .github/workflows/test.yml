@@ -13,3 +13,4 @@ jobs:
         uses: rainforestapp/rainforest-github-action@master
         env:
           RAINFOREST_API_TOKEN: ${{ secrets.RAINFOREST_API_TOKEN }}
+      - run: run --fail-fast -f spec/rainforest
