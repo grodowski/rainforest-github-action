@@ -12,4 +12,4 @@ runs:
   using: 'docker'
   image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
   args:
-    - ${{ inputs.who-to-greet }}
+    - help
