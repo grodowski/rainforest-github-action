@@ -7,3 +7,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
+  entrypoint: 'sh -c'
