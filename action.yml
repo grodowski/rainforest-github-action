@@ -10,6 +10,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'gcr.io/rf-public-images/rainforest-cli'
+  image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
   args:
     - ${{ inputs.who-to-greet }}
