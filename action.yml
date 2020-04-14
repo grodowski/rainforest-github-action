@@ -7,5 +7,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
+  entrypoint: 'rainforest-cli'
   args:
     - run --fail-fast -f spec/rainforest
