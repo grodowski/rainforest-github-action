@@ -1,15 +1,14 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Rainforest QA RFML Runner'
+description: 'Run RFML tests from your repo'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  rainforest_api_key:  # id of input
+    description: 'Rainforest API key'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'docker://gcr.io/rf-public-images/rainforest-cli:latest'
   args:
-    - help
+    - sites
