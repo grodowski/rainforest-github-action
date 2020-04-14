@@ -10,4 +10,5 @@ runs:
   args:
     - 'run'
     - '--fail-fast'
-    - '-f spec/rainforest'
+    - '-f'
+    - 'spec/rainforest'
